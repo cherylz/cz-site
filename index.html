@@ -13,6 +13,23 @@
 </head>
 
 <body>
+  <nav>
+    <ul id="expand-navbar">
+      <li class="left-navbar"><a href="#index">CZ Studios</a></li>
+      <li class="right-navbar"><a href="#about">About</a></li>
+      <li class="right-navbar"><a href="#work">Work</a></li>
+      <li class="right-navbar"><a href="#contact">Contact</a></li>
+      <li><a class="mobile-navbar" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fas fa-bars"></i></a></li>
+    </ul>
+
+    <!-- collapsed menu -->
+    <div class="collapse navbar-collapse px-4 pb-4 font-weight-light bg-white position-absolute" id="navbarMenu">
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link" href="#work">Work</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
+    </div>
+
+  </nav>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

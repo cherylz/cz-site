@@ -48,3 +48,104 @@ table {
 }
 
 /*            End of CSS Reset            */
+
+/*     Styling fonts, links and lists     */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*         Styling navigation bar         */
+
+nav, #expand-navbar {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+}
+
+#expand-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.left-navbar {
+  margin-right: auto;
+  padding-left: 50px;
+  font-size: 22px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.left-navbar a {
+  color: #00D1D0;
+}
+
+.right-navbar {
+  padding-right: 50px;
+  font-size: 17px;
+  line-height: 70px;
+}
+
+.right-navbar a:hover {
+  color: #00D1D0;
+}
+
+.mobile-navbar {
+  display: none;
+  padding-right: 50px;
+  font-size: 17px;
+  line-height: 70px;
+}
+
+.mobile-navbar:hover {
+  color: #00D1D0;
+}
+
+#navbarMenu {
+  top: 70px;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  height: 150px;
+  font-size: 13px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+#navbarMenu a {
+  padding-left: 26px;
+  padding-bottom: 20px;
+}
+
+#navbarMenu a:hover {
+  color: #00D1D0;
+}
+
+/*         Making the site responsive              */
+
+@media (min-width: 800px) {
+  #navbarMenu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .right-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: inline-block;
+    padding-right: 30px;
+  }
+  .left-navbar {
+    padding-left: 30px;
+    font-size: 18px;
+  }
+}
